@@ -4,97 +4,103 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Oxford Dhoti Society</title>
+
+  <!-- Google Fonts (modern, crisp) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;color:#111}
-    header{background:#f4f0e8;padding:32px 18px;text-align:center}
-    .container{max-width:900px;margin:28px auto;padding:0 18px}
-    h1{margin:.2em 0;font-size:2rem}
-    h2{margin-top:32px}
-    p{line-height:1.5}
-    .grid{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px}
-    .card{
-      flex:1 1 260px;
-      padding:18px;
-      border:1px solid #e5e5e5;
-      border-radius:8px;
-      background:white;
-      box-shadow:0 2px 4px rgba(0,0,0,0.05);
+    :root{
+      --accent:#0b4d3a;
+      --muted:#666;
+      --card:#ffffff;
+      --bg:#fbfbfb;
+      --maxw:980px;
+      --radius:12px;
     }
-    .term-card{
-      border-left:5px solid #2b5d4b;
-    }
-    a.button{
-      display:inline-block;
-      padding:10px 14px;
-      background:#2b5d4b;
-      color:#fff;
-      border-radius:6px;
-      text-decoration:none;
-      margin-right:8px;
-    }
-    footer{
-      margin:50px 0;
-      text-align:center;
-      color:#666;
-      font-size:.9rem;
-    }
-    @media (max-width:520px){
-      .grid{flex-direction:column}
-    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial; margin:0; background:var(--bg); color:#111; -webkit-font-smoothing:antialiased}
+    header{background:linear-gradient(135deg,#fff 0%, #f3fbf6 100%); padding:40px 20px; text-align:center; border-bottom:1px solid #eee}
+    .container{max-width:var(--maxw); margin:28px auto; padding:0 20px}
+    h1{font-size:2.1rem; margin:.1em 0; color:var(--accent)}
+    p.lead{font-size:1.05rem; margin:8px auto 0; color:#222; max-width:780px}
+    .top-actions{margin-top:18px}
+    .btn{display:inline-block;background:var(--accent); color:#fff; padding:10px 14px; border-radius:9px; text-decoration:none; font-weight:600; margin-right:8px}
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:22px}
+    .card{background:var(--card); border-radius:var(--radius); padding:18px; box-shadow:0 6px 18px rgba(12,30,18,0.04); border:1px solid #eee}
+    .term-card{border-left:5px solid var(--accent)}
+    h2{color:#111; margin:18px 0 8px}
+    ul.docs{list-style:none; padding:0; margin:0}
+    ul.docs li{margin:10px 0}
+    a.doc-link{color:var(--accent); text-decoration:none; font-weight:600}
+    footer{margin:40px 0; text-align:center; color:var(--muted); font-size:.95rem}
+    @media (max-width:920px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:620px){ .grid{grid-template-columns:1fr} header{padding:28px 12px} h1{font-size:1.6rem} .container{padding:0 14px} }
+    .meta{color:var(--muted); font-size:.95rem}
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Oxford Dhoti Society</h1>
-  <p>A forum for civilisational philosophy, indigenous clothing, and southernising knowledge.</p>
-  <a class="button" href="#documents">Documents</a>
-  <a class="button" href="#contact">Contact</a>
+  <div class="container">
+    <h1>Oxford Dhoti Society</h1>
+    <p class="lead">
+      An intellectual society exploring civilisational thought through indigenous philosophical lenses, and
+      Indigenous clothing — the dhoti (veshti, mundu, pancha) and analogous draped garments - examined as instruments of “southernisation.”
+    </p>
+    <div class="top-actions">
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="#documents">Documents</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </div>
 </header>
 
 <main class="container">
 
-<section id="aims">
-  <h2>Aims</h2>
-  <p>
-    The Oxford Dhoti Society promotes structured engagement with  philosophical traditions and civilisational thoughts. 
-    Indigenous clothing—particularly the dhoti and analogous draped garments across civilisations—is examined as an instrument of southernisation, 
-    epistemic autonomy, and cultural continuity. The Society also studies ritual practices as embodiments of philosophical commitments.
-  </p>
-</section>
+  <section id="about">
+    <h2>About</h2>
+    <p class="meta">(Mission & scope)</p>
+    <p>
+      The Oxford Dhoti Society is a rigorous intellectual club dedicated to the study, articulation, and critical examination of civilisational thoughts through an indigenous philosophical lens. Using indigenous clothing— the dhoti (also known regionally as veshti, mundu, or pancha)—as an instrument of “southernisation,” the Society seeks to explore how material culture embodies philosophical commitments, social order, and civilisational self-understanding. The dhoti, as an unstitched and historically continuous garment, represents simplicity, unity-in-diversity, ritual consciousness, and intellectual self-definition. Through this symbol, the Society examines how Indian traditions understand self, society, knowledge, ethics, polity, and the cosmos.
+    </p>
+    <p>
+      The Society’s primary aim is academic and discursive. It promotes structured engagement with philosophical traditions, particularly those stemming from Indosphere—including but not limited to Vedānta, Buddhist and Jain thought, Dharma traditions, classical political theory, and modern Indian intellectual movements—within the University. By foregrounding indigenous categories of analysis rather than exclusively Western interpretative frameworks, the Society seeks to contribute to the diversification and enrichment of philosophical discourse at Oxford.
+    </p>
+    <p>
+      A central dimension of the Society’s work is the critical exploration of “southernising” knowledge: interrogating how global intellectual hierarchies are formed and how civilisations articulate their own normative visions. Within this framework, the revival and conscious adoption of indigenous clothing traditions is treated not as mere aesthetic preference, but as a reflective practice tied to questions of epistemic autonomy, cultural dignity, and ethical minimalism. Members may choose to wear the dhoti in accordance with their regional or familial traditions during designated Society events. Recognising that draped, unstitched garments analogous to the dhoti have existed across multiple civilisations—including in Africa, Southeast Asia, and the Mediterranean—the Society equally welcomes members who wish to wear equivalent traditional attire from their own cultures. The emphasis is on civilisational continuity and pluralism, not cultural exclusivity.
+    </p>
+    <p>
+      The Society will also examine ritual practice as a site of philosophical meaning. Discussions of rites of passage, ceremonial dress, and symbolic practices will form part of a broader inquiry into how metaphysical and ethical commitments are embodied in lived traditions. Lectures, seminars, reading groups, and panel discussions will address Indian approaches to ethics (dharma), political autonomy, spiritual practice, aesthetics, and social organisation, situating them within comparative and cross-civilisational debates.
+    </p>
+    <p>
+      The Society is inclusive and open to all members of the University, irrespective of nationality, religion, or background. It does not promote sectarianism or partisan advocacy. No club function has required any financial transaction to date. The club aspires to be an open-access society with no fees or financial commitments, or transactions, and focus on discussion of ideas in a free manner. It seeks to foster informed, respectful, and analytically robust engagement with civilisational perspectives, contributing meaningfully to Oxford’s wider intellectual ecosystem.
+    </p>
+  </section>
 
-<section id="termcard">
-  <h2>Term Card</h2>
-  <div class="grid">
-    <div class="card term-card">
-      <h3> Trinity Term</h3>
-      <p>Lecture: Civilisational Identity & Knowledge Systems. Week 5, Wednesday. Venue: TBC </p>
-      <p>Reading Group: Upanishadic Thought, Time and Venue TBC</p>
-    </div>
 
-  </div>
-</section>
+  <section id="documents">
+    <h2>Documents</h2>
+    <p class="meta">All documents are open-access; click to download.</p>
+    <ul class="docs">
+      <li><a class="doc-link" href="https://docs.google.com/document/d/1WqCAvipBzKjFY3WKZdfAUnKZhoEc-txq/edit?usp=sharing&ouid=112392248993550313608&rtpof=true&sd=true" target="_blank">Constitution (download)</a></li>
+      <li><a class="doc-link" href="https://docs.google.com/document/d/1U2HGkZipI15SVtCAW1CAqaoSP6y9O1Lx/edit?usp=sharing&ouid=112392248993550313608&rtpof=true&sd=true" target="_blank">Code of Conduct (download)</a></li>
+      <li><a class="doc-link" href="https://docs.google.com/document/d/16Q5-6BF2bq6SkMOW2mc3MM7X6Br8_acl/edit?usp=sharing&ouid=112392248993550313608&rtpof=true&sd=true" target="_blank">Complaints Procedure (download)</a></li>
+      <li><a class="doc-link" href="https://docs.google.com/document/d/10vvebfRvuXzmRk8qPUNgTdb2EzGGiHPQ/edit?usp=sharing&ouid=112392248993550313608&rtpof=true&sd=true" target="_blank">Term Card </a></li>
+    </ul>
+  </section>
 
-<section id="documents">
-  <h2>Documents</h2>
-  <ul>
-    <li><a href="documents/Oxford_Dhoti_Society_Constitution.docx" target="_blank">Constitution</a></li>
-    <li><a href="documents/Oxford_Dhoti_Society_Code_of_Conduct.docx" target="_blank">Code of Conduct</a></li>
-    <li><a href="documents/Oxford_Dhoti_Society_Complaints_Procedure.docx" target="_blank">Complaints Procedure</a></li>
-    <li><a href="documents/Oxford_Dhoti_Society_Accounts_Statement.docx" target="_blank">Accounts Statement</a></li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: oxforddhotisociety@gmaail.com</p>
-  <p>Open to all University of Oxford students.</p>
-</section>
+  <section id="contact">
+    <h2>Contact & Join</h2>
+    <p>Email: <a href="mailto:oxforddhotisociety@gmaail.com" class="doc-link">Address</a></p>
+    <p class="meta">Membership is open to all University of Oxford students.</p>
+  </section>
 
 </main>
 
 <footer>
-  Oxford Dhoti Society — maintained by student volunteers.
+  <div class="container">
+    <small>Oxford Dhoti Society — maintained by student volunteers • For official matters contact the President.</small>
+  </div>
 </footer>
 
 </body>
